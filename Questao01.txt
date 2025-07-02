@@ -1,0 +1,1 @@
+O metodoRec02 está trocando a posição de valores em um vetor em um determinado intervalo, mas sem retornar nada por ser void e não ter retorno de valor
