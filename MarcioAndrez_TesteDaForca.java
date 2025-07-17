@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class MarcioAndrez_TesteDaForca {
 
     private static Scanner LER = new Scanner(System.in);
+
     public static void main(String[] args) {
 
         while (LER.hasNext()) {
@@ -19,11 +20,11 @@ public class MarcioAndrez_TesteDaForca {
             imprimirPoderMinimo(poderMinimo);
         }
     }
-                                    
+
     public static void imprimirPoderMinimo(int poderMinimo) {
         System.out.println(poderMinimo);
     }
-            
+
     public static int qtdaPoderMinimo(int[] vetCandidatos, int k, int n) {
 
         int min = 0;
@@ -37,14 +38,14 @@ public class MarcioAndrez_TesteDaForca {
 
         return min;
     }
-            
+
     public static int[] ordenarVetor(int[] vetCandidatos) {
         int t = 0;
 
         for (int i = 0; i < vetCandidatos.length; i++) {
             for (int j = 0; j < vetCandidatos.length; j++) {
                 if (vetCandidatos[i] > vetCandidatos[j])
-                t = vetCandidatos[i];
+                    t = vetCandidatos[i];
                 vetCandidatos[i] = vetCandidatos[j];
                 vetCandidatos[j] = vetCandidatos[i];
             }
@@ -52,24 +53,24 @@ public class MarcioAndrez_TesteDaForca {
 
         return vetCandidatos;
     }
-            
+
     public static int[] lerCandidatos(int[] vetCandidatos) {
 
         for (int i = 0; i < vetCandidatos.length; i++) {
             do {
                 vetCandidatos[i] = LER.nextInt();
-            } while(vetCandidatos[i] < 0);
+            } while (vetCandidatos[i] < 0);
         }
 
         return vetCandidatos;
     }
-            
+
     public static int lerK(int n) {
         int q = 0;
 
         do {
             q = LER.nextInt();
-        } while(q < 1 || q > n);
+        } while (q < 1 || q > n);
 
         return q;
     }
@@ -79,7 +80,7 @@ public class MarcioAndrez_TesteDaForca {
 
         do {
             q = LER.nextInt();
-        } while(q < 1 || q > Math.pow(10, 6));
+        } while (q < 1 || q > Math.pow(10, 6));
 
         return q;
     }

@@ -36,7 +36,7 @@ public class Questao02_Tribonacci {
         if (n < 2) {
             return funcao;
         } else {
-            return preencherFuncaoRec(funcao + (funcao*(n-1))+(funcao*(n-2))+(funcao*(n-3)), n-1);
+            return preencherFuncaoRec(funcao + (funcao*(n-1))+(funcao*(n-2))+(funcao*(n-3)), n-1); // Incompleto!
         }
     }
             
